@@ -277,6 +277,7 @@ class TestShipmentIn(unittest.TestCase):
             shipment3 = self._create_serialized_move_shipment(defaults)
             # first check if every move has expected value
             self.assertEqual(len(shipment3.incoming_moves), 1)
+            move_original_id = shipment3.incoming_moves[0].id
 
             for move in shipment3.incoming_moves:
                 self.assertEqual(move.quantity, 3.0)
@@ -287,6 +288,8 @@ class TestShipmentIn(unittest.TestCase):
 
             for move in shipment3.incoming_moves:
                 self.assertEqual(move.quantity, 1.0)
+                if move.id != move_original_id:
+                    self.assertFalse(move.lot)
 
     def test0040incoming_move_mixed_receive(self):
         '''

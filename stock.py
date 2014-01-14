@@ -36,7 +36,7 @@ class ShipmentIn:
             if not move.product.serialized_inventory_control:
                 continue
             while move.quantity > 1:
-                Move.copy([move], {'quantity': 1})
+                Move.copy([move], {'quantity': 1, 'lot': None})
                 move.quantity -= 1
             move.save()
 
