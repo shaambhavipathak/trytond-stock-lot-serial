@@ -10,9 +10,5 @@ will be replaced by 'n' new incoming moves each with quantity equal to one.
 
 .. image:: https://api.travis-ci.org/openlabs/trytond-stock-lot-serial.svg?branch=develop
     :target: https://travis-ci.org/openlabs/trytond-stock-lot-serial
-
-.. image:: https://pypip.in/download/openlabs_stock_lot_serial/badge.svg
-        :target: https://pypip.in/download/openlabs_stock_lot_serial/badge.svg
-
-.. image:: https://pypip.in/version/openlabs_stock_lot_serial/badge.svg
-        :target: https://pypip.in/version/openlabs_stock_lot_serial
+[![Downloads](https://pypip.in/download/openlabs_stock_lot_serial/badge.svg)](https://pypi.python.org/pypi/openlabs_stock_lot_serial/)
+[![Latest Version](https://pypip.in/version/openlabs_stock_lot_serial/badge.svg)](https://pypi.python.org/pypi/openlabs_stock_lot_serial/)
